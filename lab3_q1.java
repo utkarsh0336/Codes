@@ -1,11 +1,20 @@
+package com.college;
+import java.util.Scanner;
 public class lab3_q1 {
     public static void main(String[] args) {
-       String temp = 0;
-        String[][] arr = new String[2][2];
+        Scanner sc = new Scanner(System.in);
+        int row;
+        int col;
+        int temp = 0;
+        System.out.println("Enter the row of the array");
+        row = sc.nextInt();
+        System.out.println("Enter the column of the array");
+        col = sc.nextInt();
+        int[][] arr = new int[row][col];
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr[i].length; j++) {
-                int n = Integer.parseInt(arr[i][j]);
-                int arr[i][j] = n;
+                System.out.println("Enter the element = ");
+                arr[i][j] = sc.nextInt();
             }
         }
         System.out.println("The array is ");
@@ -15,17 +24,17 @@ public class lab3_q1 {
             }
             System.out.println();
         }
-            for(int b = 0;b<2;b++) {
+            for(int b = 0;b<row;b++) {
                 int l = Math.floorDiv(arr[b].length, 2);
                 for (int i = 0; i < l; i++) {
                     temp = arr[b][i];
-                    arr[b][i] = arr[b][2 - i - 1];
-                    arr[b][2 - i - 1] = temp;
+                    arr[b][i] = arr[b][col - i - 1];
+                    arr[b][col - i - 1] = temp;
                 }
             }
         System.out.println("The reverse array is ");
-        for(int i = 0;i<2;i++){
-            for(int j = 0;j<2;j++){
+        for(int i = 0;i<row;i++){
+            for(int j = 0;j<col;j++){
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();
@@ -34,3 +43,5 @@ public class lab3_q1 {
         }
 
         }
+
+

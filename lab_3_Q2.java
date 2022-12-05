@@ -1,3 +1,4 @@
+package com.college;
 public class lab_3_Q2 {
     public static void main(String[] args) {
         int [][] arr = new int [3][3];

@@ -1,3 +1,4 @@
+package com.college;
 class MyException extends Exception{
     int age;
     public MyException(int a){
@@ -12,7 +13,7 @@ public class Lab9Q2 {
         String name = args[0];
         try {
             int age = Integer.parseInt(args[1]);
-            if(age<18 || age>= 60){
+            if(age<18 && age>= 60){
                 throw new MyException(age);
             }
         }
@@ -22,3 +23,4 @@ public class Lab9Q2 {
         }
 
     }
+
