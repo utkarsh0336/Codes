@@ -1,19 +1,21 @@
-#include<stdio.h>  
-int main(){    
-int n,i,m=0,a=0;    
-printf("Enter the number\n");    
-scanf("%d",&n);    
-m=n/2;    
-for(i=2;i<=m;i++)    
-{    
-if(n%i==0)    
-{    
-printf("%d is not prime",n);    
-a=1;    
-break;    
-}    
-}    
-if(a==0)    
-printf("%d is prime",n);     
-return 0;  
- }    
+#include<stdio.h>
+int main()
+{
+    int num,i,c=0;
+    printf("Enter the number\n");
+    scanf("%d", &num);
+    for(i=1;i<=num;i++)
+    {
+        if(num%i==0)
+        {
+         c++;
+        }
+    }
+    
+        if(c==2)
+        printf("%d is the prime factor of %d\n", i,num);
+        else
+        printf("%d is the not prime factor of %d\n", i,num);
+        
+    return 0;
+}
