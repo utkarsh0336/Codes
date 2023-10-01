@@ -1,6 +1,7 @@
-h1{
-    color: #ffffff;
-}
-h2{
-    color: #ffff00;
+/* #myId p{
+    color: green;
+} */
+
+div[id="myId"] p{
+    color: green;
 }

@@ -1,11 +1,17 @@
-h2{
-    color: orange;
+*{
+    font-family: 'Courier New', Courier, monospace;
 }
-button{
+
+h1{
+    color: #1b74e4;
+}
+
+.lastbutton{
+    background-color: #000;
     color: white;
-    background-color: blue;
 }
-p{
-    color: white;
-    background-color: black;
+
+.button{
+    background-color: aqua;
 }
+
